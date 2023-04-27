@@ -1,0 +1,23 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: askme_development
+  pool: 5
+  username: dell
+  password: password
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: askme_test
+  pool: 5
+  username: dell
+  password: password
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: askme_production
+  pool: 5
+  username: dell
+  password: password
