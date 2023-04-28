@@ -1,5 +1,5 @@
 class QuestionsController < ApplicationController
-  before_action :set_question, only %i[update show destroy edit]
+  before_action :set_question, only: %i[update show destroy edit]
 
   def create
     question = Question.create(params[:questions])
