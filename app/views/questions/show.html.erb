@@ -2,4 +2,10 @@
 <p><%= @question.body %></p>
 <p>user_id: <b><%= @question.user_id %></b></p>
 
+<p><%= link_to "Edit question", edit_question_path(@question) %></p>
+
+<div>
+  <%= button_to "Delete question", question_path(@question), method: :delete %>
+</div>
+
 <p><%= link_to "All questions", questions_path %></p>
